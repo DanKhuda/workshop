@@ -1,18 +1,23 @@
 mixin header
     header.header
         .header-menu
-            a.logo
-                img.logo__image(src='./assets/img/bikezilla.png', alt='logo')
+            a.logo(href="/")
+                img.logo__image(src='./assets/img/logo.png', alt='logo')
             .header-menu__items
                 a.header-menu__item(href='')
                     | Home
                 a.header-menu__item(href='')
-                    | Services
+                    | About Us
                 a.header-menu__item(href='')
-                    | Contacts
+                    | Members
+                a.header-menu__item(href='')
+                    | Join
+                a.header-menu__item(href='')
+                    | Contact
         .banner
-            video.banner__video(autoplay='', muted='', loop='')
-                source(src='https://www.w3schools.com/howto/rain.mp4', type='video/mp4')
-                |   Your browser does not support HTML5 video.
-            h2.banner__text
-                |   Random title text
+            h1.banner__text
+                div.banner__sub-text your bikers club
+                | The riders
+            button.btn
+                | Join
+

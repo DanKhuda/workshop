@@ -1,0 +1,18 @@
+mixin content
+    .contact
+        span.contact
+            | Contact form
+        form.contact__form.form(action='', method='GET')
+            .contact__item.field
+                label.field__name(for='contact__name') Full name
+                input#contact__name.field__input.field__input-name(type='text' required="required")
+            .contact__item.field
+                label.field__email(for='contact__email') Email
+                input#contact__email.field__input.field__input-email(type='email' required="required")
+            .contact__item.field
+                label.field__experience(for='contact__experience') Driving experience
+                input#contact__experience.field__input.field__input-experience(type='number' min='0' required="required")
+            .contact__item.field
+                label.field__bike(for='contact__bike') Bike ownership
+                input#contact__bike.field__input.field__input-bike(type='checkbox' required="required")
+            input.contact__button(type='submit', value='Send')

@@ -1,5 +1,6 @@
 include ./components/header/header
 include ./components/footer/footer
+include ./components/home/home
 
 doctype html
 html(lang='en')
@@ -11,8 +12,8 @@ html(lang='en')
     body
         +header
 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi nam nulla perspiciatis, quaerat reiciendis similique! Cupiditate, dicta dolores eius error illum, laborum molestiae nobis nostrum quae sapiente, tempora veritatis.
-        block content
+        +content
+        //block content
 
         +footer
 
