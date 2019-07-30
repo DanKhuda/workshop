@@ -7,13 +7,14 @@ body
   font-family: sans-serif
 
 .header
-  background: url("../../../assets/img/header-background.png") center center no-repeat
+  background: url("../../../assets/img/small-background.png") center center no-repeat
   background-size: cover
   width: 100%
-  height: 50vh
+  height: 100vh
 
   +tablet-landscape
     height: 100vh
+    background: url("../../../assets/img/header-background.png") center center no-repeat
 
 .logo__image
   width: 70%
@@ -22,6 +23,14 @@ body
   display: flex
   justify-content: space-around
   align-items: center
+  position: fixed
+  width: 100%
+  z-index: 999
+
+.scrolled
+  background: #161A24
+  box-shadow: -1px 4px 26px -2px rgba(0,0,0,0.75)
+  transition: background-color 1s
 
 .header-menu__item
   padding: 0 1rem
@@ -46,28 +55,36 @@ body
   display: flex
   align-items: center
   flex-direction: column
-  padding: 0 5rem
+  justify-content: center
+  height: 100vh
 
   +tablet-landscape
     align-items: flex-start
     justify-content: flex-end
-    height: 55vh
+    height: 70vh
+    padding: 0 5rem
 
 .banner__text
   text-transform: uppercase
   color: #ffffff
   font-weight: 700
-  font-size: 3rem
+  font-size: 2rem
   width: 100%
 
+  +tablet-landscape
+    font-size: 3rem
+
   +desktop
-    width: 60%
     font-size: 5rem
 
 
 .banner__sub-text
   width: 100%
   line-height: 8rem
+  display: inline
+
+  +tablet-landscape
+    display: block
 
 .btn
   font-size: 1.5rem

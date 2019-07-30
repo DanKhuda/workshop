@@ -1,19 +1,18 @@
 import "./index.pug"
 import  "./index.sass"
 import "../assets/img"
+import "./components/header/header"
 import Join from "./components/join/join";
 import "./components/about/about";
 import "./components/members/members";
+import "./components/footer/footer";
 import * as firebase from 'firebase/app'
 import 'firebase/database'
-// import $ from 'jquery';
-// window.$ = window.jQuery = $;
-// import 'slick-carousel';
 
 const join = new Join();
 join.init();
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBojtvpYUGz9rzrBjNoYv5UX7sfBfGxjPI",
     authDomain: "bikersclub-45502.firebaseapp.com",
     databaseURL: "https://bikersclub-45502.firebaseio.com",

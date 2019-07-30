@@ -1,9 +1,24 @@
+@import "../../sass/mixins"
+
 .about__content
   display: flex
   justify-content: space-around
+  position: relative
+  flex-direction: column
+
+  +large-desktop
+    flex-direction: row
 
 .about__article
-  width: 30%
+  width: 100%
+  z-index: 5
+
+  +large-desktop
+    width: 30%
+
+.banner__button
+  text-align: center
+  text-decoration: none
 
 .text
   color: #ffffff
@@ -11,9 +26,6 @@
 .text__title
   font-size: 3rem
   text-transform: uppercase
-
-.about__content
-  position: relative
 
 .about__content:after
   content: ''
@@ -23,7 +35,10 @@
   width: 60%
   height: 100%
   z-index: 1
-  background: url("../../../assets/img/line.png") no-repeat
+  background: none
+
+  +large-desktop
+    background: url("../../../assets/img/line.png") no-repeat
 
 .about__image
   max-width: 100%

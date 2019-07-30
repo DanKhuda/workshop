@@ -12,3 +12,4 @@ import "../../assets/img/join-background.png";
 import "../../assets/img/bike-background.png";
 import "../../assets/img/wire-one.png";
 import "../../assets/img/wire-two.png";
+import "../../assets/img/small-background.png";

@@ -1,23 +1,23 @@
 mixin header
-    header.header
+    header.header#home
         .header-menu
             a.logo(href="/")
                 img.logo__image(src='./assets/img/logo.png', alt='logo')
             .header-menu__items
-                a.header-menu__item(href='')
+                a.header-menu__item(href='#home')
                     | Home
-                a.header-menu__item(href='')
+                a.header-menu__item(href='#about')
                     | About Us
-                a.header-menu__item(href='')
+                a.header-menu__item(href='#members')
                     | Members
-                a.header-menu__item(href='')
+                a.header-menu__item(href='#join')
                     | Join
-                a.header-menu__item(href='')
+                a.header-menu__item(href='#contact')
                     | Contact
         .banner
             h1.banner__text
                 div.banner__sub-text your bikers club
                 | The riders
-            button.btn
+            a.banner__button.btn(href="#join")
                 | Join
 
