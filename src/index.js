@@ -2,8 +2,13 @@ import "./index.pug"
 import  "./index.sass"
 import "../assets/img"
 import Contact from "./components/home/contact";
+import "./components/about/about";
+import "./components/members/members";
 import * as firebase from 'firebase/app'
 import 'firebase/database'
+// import $ from 'jquery';
+// window.$ = window.jQuery = $;
+// import 'slick-carousel';
 
 const contact = new Contact();
 contact.init();

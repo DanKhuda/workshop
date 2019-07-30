@@ -1,6 +1,8 @@
 include ./components/header/header
 include ./components/footer/footer
 include ./components/home/home
+include ./components/about/about
+include ./components/members/members
 
 doctype html
 html(lang='en')
@@ -12,8 +14,11 @@ html(lang='en')
     body
         +header
 
-        +content
+        +about
+        +members
+        //+content
+
         //block content
 
-        +footer
+        //+footer
 

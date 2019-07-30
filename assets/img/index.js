@@ -1,2 +1,11 @@
 import "../../assets/img/header-background.png";
 import "../../assets/img/logo.png";
+import "../../assets/img/about.png";
+import "../../assets/img/line.png";
+import "../../assets/img/members-background.png";
+import "../../assets/img/circle.png";
+import "../../assets/img/member-one.png";
+import "../../assets/img/member-two.png";
+import "../../assets/img/member-three.png";
+import "../../assets/img/arrow.png";
+import "../../assets/img/join-background.png";
