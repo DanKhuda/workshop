@@ -9,3 +9,6 @@ import "../../assets/img/member-two.png";
 import "../../assets/img/member-three.png";
 import "../../assets/img/arrow.png";
 import "../../assets/img/join-background.png";
+import "../../assets/img/bike-background.png";
+import "../../assets/img/wire-one.png";
+import "../../assets/img/wire-two.png";

@@ -1,0 +1,66 @@
+.join
+  width: 100%
+  height: 100vh
+  background: #121A27
+  position: relative
+
+.join__content
+  display: flex
+  background: url("../../../assets/img/bike-background.png") center center no-repeat
+  background-size: cover
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  width: 90%
+  height: 90vh
+
+.join__content:before
+  content: ""
+  background: url("../../../assets/img/wire-one.png") no-repeat
+  position: absolute
+  top: -6rem
+  width: 100%
+  height: 100%
+
+.join__form
+  width: 30%
+  background-image: linear-gradient(to right, rgb(78, 47, 163) 0%, rgb(87, 145, 217) 100%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-radius: 10px
+  z-index: 1
+
+.field__input
+  width: 100%
+  height: 2rem
+  background: transparent
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom: 2px solid #ffffff
+  font-size: 1.2rem
+  outline: none
+  color: #ffffff
+  margin-bottom: 1rem
+
+.field__input::placeholder
+  color: #ffffff
+
+.join__item
+  width: 50%
+  display: flex
+  justify-content: space-between
+
+.field__bike
+  color: #ffffff
+  font-size: 1.2rem
+  padding: .5rem 0
+
+.field__input-bike
+  width: 20%
+  padding-bottom: 1rem
+
+.join__button
+  margin-bottom: 1rem
