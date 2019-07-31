@@ -1,0 +1,72 @@
+@import "../../sass/mixins"
+
+.members
+  width: 99%
+  height: 100vh
+  background: url("../../../assets/img/members-background.png") center center no-repeat
+  background-size: cover
+
+  +tablet-portrait
+    width: 100%
+
+.slide
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 100vh
+  flex-direction: column-reverse
+
+  +large-desktop
+    flex-direction: row
+
+.slider-for
+  width: 90%
+  text-align: center
+
+  +large-desktop
+    width: 45%
+
+.slider-nav
+  width: 90%
+  margin-top: 5rem
+  border: none
+
+  +large-desktop
+    width: 45%
+    border-left: 3px solid #ffffff
+
+.description__title
+  color: #ffffff
+
+.members__description
+  color: #ffffff
+
+.members__image
+  width: 50%
+  margin: 0 auto
+
+.description__text
+  color: #ffffff
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  z-index: 50
+  margin-top: -12px
+
+.slick-prev:before
+  content: ""
+  position: absolute
+  transform: rotate(180deg)
+  left: 3rem
+  background: url("../../../assets/img/arrow.png") center center no-repeat
+  width: 50px
+  height: 50px
+
+.slick-next:before
+  content: ""
+  position: absolute
+  right: 3rem
+  background: url("../../../assets/img/arrow.png") center center no-repeat
+  width: 50px
+  height: 50px

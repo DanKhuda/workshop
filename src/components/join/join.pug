@@ -1,0 +1,19 @@
+mixin join
+    section.join#join
+        .join__content
+            form.join__form.form(action='', method='post')
+                .join__logo-wrapper
+                    img.img(src="./assets/img/logo.png" alt="logo")
+                .join__item.field
+                    //label.field__name(for='join__name') Full name
+                    input#join__name.field__input.field__input-name(type='text' required="required" placeholder="Full name")
+                .join__item.field
+                    //label.field__email(for='join__email') Email
+                    input#join__email.field__input.field__input-email(type='email' required="required" placeholder="Email")
+                .join__item.field
+                    //label.field__experience(for='join__experience') Driving experience
+                    input#join__experience.field__input.field__input-experience(type='number' min='0' required="required" placeholder="Driving experience")
+                .join__item.field
+                    label.field__bike(for='join__bike') Bike ownership
+                    input#join__bike.field__input.field__input-bike(type='checkbox' required="required")
+                input.join__button.btn(type='submit', value='Send')

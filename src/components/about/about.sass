@@ -1,0 +1,118 @@
+@import "../../sass/mixins"
+
+.about__content
+  display: flex
+  justify-content: space-around
+  position: relative
+  flex-direction: column
+
+  +large-desktop
+    flex-direction: row
+
+.about__article
+  width: 100%
+  z-index: 5
+
+  +large-desktop
+    width: 30%
+
+.banner__button
+  text-align: center
+  text-decoration: none
+
+.text
+  color: #ffffff
+
+.text__title
+  font-size: 3rem
+  text-transform: uppercase
+
+.about__content:after
+  content: ''
+  position: absolute
+  top: 5%
+  left: 0
+  width: 60%
+  height: 100%
+  z-index: 1
+  background: none
+
+  +large-desktop
+    background: url("../../../assets/img/line.png") no-repeat
+
+.about__image
+  max-width: 100%
+  height: auto
+
+.text-circle__items
+  counter-reset: item
+
+.text-circle__items .text-circle__item
+  display: block
+  padding: 1rem 0
+  font-size: 1.5rem
+  margin: 1rem 0
+
+.text-circle__items .text-circle__item:before
+  content: counter(item) ""
+  counter-increment: item
+  color: #ffffff
+  border-radius: 100%
+  border-top: 2px solid #4E2FA3
+  border-bottom: 2px solid #5791D9
+  border-left: 2px solid #4E2FA3
+  border-right: 2px solid #5791D9
+  padding: .8rem 1.2rem
+  margin: .5rem
+
+.text-circle__items .text-circle__item:first-child:before
+  animation: radial-pulse 1s 1s infinite
+
+.text-circle__item:hover
+  cursor: pointer
+
+.text-circle__item:hover:before
+  border: none
+  padding: .8rem 1.3rem
+  background-image: linear-gradient(to right, rgb(78, 47, 163) 0%, rgb(87, 145, 217) 100%)
+
+@keyframes radial-pulse
+  0%
+    box-shadow: 0 0 0 0px rgba(78, 47, 163, 1)
+
+  100%
+    box-shadow: 0 0 0 20px rgba(7, 145, 217, 0)
+
+.about__image-wrapper
+  position: relative
+
+.hide-text__item
+  display: none
+  position: absolute
+  z-index: 3
+  border-radius: 10px
+  padding: .5rem
+
+.block-helmet
+  top: 0
+  right: -5rem
+  background: #ffffff
+  color: #4E529D
+  width: 50%
+  height: 10%
+
+.block-bike
+  bottom: 0
+  left: -5rem
+  background: #ffffff
+  color: #4E529D
+  width: 30%
+  height: 30%
+
+.block-jacket
+  bottom: 10%
+  right: -1rem
+  background-image: linear-gradient(to right, rgb(78, 47, 163) 0%, rgb(87, 145, 217) 100%)
+  color: #ffffff
+  width: 30%
+  height: 15%

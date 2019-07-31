@@ -1,0 +1,102 @@
+@import './../../sass/mixins'
+
+body
+  padding: 0
+  margin: 0
+  background: #161a24
+  font-family: sans-serif
+
+.header
+  background: url("../../../assets/img/small-background.png") center center no-repeat
+  background-size: cover
+  width: 100%
+  height: 100vh
+
+  +tablet-landscape
+    height: 100vh
+    background: url("../../../assets/img/header-background.png") center center no-repeat
+
+.logo__image
+  width: 70%
+
+.header-menu
+  display: flex
+  justify-content: space-around
+  align-items: center
+  position: fixed
+  width: 100%
+  z-index: 999
+
+.scrolled
+  background: #161A24
+  box-shadow: -1px 4px 26px -2px rgba(0,0,0,0.75)
+  transition: background-color 1s
+
+.header-menu__item
+  padding: 0 1rem
+  text-decoration: none
+  color: #ffffff
+  font-size: 1rem
+  text-transform: uppercase
+  display: inline-block
+
+.header-menu__item:after
+  content: ''
+  display: block
+  width: 0
+  height: 2px
+  background: #ffffff
+  transition: width .5s
+
+.header-menu__item:hover:after
+  width: 100%
+
+.banner
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  height: 100vh
+
+  +tablet-landscape
+    align-items: flex-start
+    justify-content: flex-end
+    height: 70vh
+    padding: 0 5rem
+
+.banner__text
+  text-transform: uppercase
+  color: #ffffff
+  font-weight: 700
+  font-size: 2rem
+  width: 100%
+
+  +tablet-landscape
+    font-size: 3rem
+
+  +desktop
+    font-size: 5rem
+
+
+.banner__sub-text
+  width: 100%
+  line-height: 8rem
+  display: inline
+
+  +tablet-landscape
+    display: block
+
+.btn
+  font-size: 1.5rem
+  color: #ffffff
+  width: 12rem
+  padding: 1rem
+  background-image: linear-gradient(to right, rgb(78, 47, 163) 0%, rgb(87, 145, 217) 100%)
+  border: none
+  border-radius: 50px
+  text-transform: uppercase
+  transition: box-shadow .5s
+
+.btn:hover
+  cursor: pointer
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75)
